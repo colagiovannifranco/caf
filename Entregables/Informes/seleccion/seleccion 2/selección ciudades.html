@@ -1,0 +1,1968 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Medición de productividad en ciudades de Latinoamérica</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="https://www.caf.com/en/" class="logo">
+									<span class="symbol"><img src="images/caf.jpeg" alt="" /></span><span class="title">CAF - Development Bank of LATIN AMERICA</span>
+								</a>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>MEDICIÓN DE LA PRODUCTIVIDAD EN CIUDADES DE LATINOAMÉRICA</h1>
+							<div style="text-align: justify">
+								<p style="text-align: justify">El objetivo de la presente consultoría es identificar los principales determinantes de los niveles de productividad para una selección de ciudades de América Latina. Se intentará reunir un conjunto de indicadores y métricas que reflejarán la situación actual de la productividad de dichas ciudades en un sentido amplio. Estos indicadores se encuentran segmentados según diferentes ámbitos de políticas para la productividad siguiendo “Determinantes de la Productividad en las Ciudades y Políticas Públicas para su Mejora”, de Guillermo Alves y Pablo López (2020): Conectividad Interna, Conectividad Externa, Trabajo y Conocimiento, Conglomerados y Cadenas de Valor, Facilitación de Negocios. A su vez, cada uno de los indicadores se puede relacionar con entre uno y cuatro ámbitos de productividad: Acceso a insumos, Cooperación entre empresas, Competencia y Empleo.</p>
+								<p style="text-align: justify">El primer paso entonces, será realizar una preselección de las ciudades que serán objeto de análisis. Para ello se trabajó en base a indicadores previamente identificados en la consultoría Alves, López, Carreras (Julio 2020), para luego complementar y ampliar.</p>
+								<p style="text-align: justify">En este primer producto, se explicarán los fundamentos de la mencionada preselección de ciudades que serán objeto de la consultoría. Haciendo uso de las ya mencionadas métricas surgidas de Alves, López, Carreras (Julio 2020), se intentará generar una muestra diversa de ciudades en términos de las problemáticas de productividad a las que éstas se enfrentan. En segundo lugar, se resumirán cuáles son los indicadores para los cuáles se posee información y para cuáles hará falta incorporar nueva información. Esto para lograr que las métricas abarquen la totalidad de los ámbitos planteados.</p>
+								<h2> Bases y ciudades disponibles</h2>
+								<div>
+									<p style="text-align: justify">Las tres principales bases de datos de las que se dispone para el presente análisis son:</p>
+										<ul>
+										<li style="text-align: justify"><b>Distancias:</b> Esta base posee información sobre distancias/tiempos de viaje entre las urbes. Esta sirve como principal input para los indicadores de Conectividad Externa e incluye a más de 420 ciudades de Latinoamérica.</li>
+										<li style="text-align: justify"><b>Sectores:</b> Corresponde con datos de la participación de las distintas actividades económicas en cada ciudad. Incorpora variables como salario y empleo por sector y sirve como principal <i>input</i> para indicadores de Conglomerados y Cadenas de Valor. Cuenta con una muestra de 279 ciudades.</li>
+										<li style="text-align: justify"><b>Empleo y educación:</b> esta base posee información respecto de variables como salario, desempleo y educación de la población. Los indicadores de Trabajo y Conocimiento provienen de esta base. Posee una muestra de más de 275 ciudades.</li>
+										</ul>
+									<p style="text-align: justify">Estas serán las bases a utilizar para intentar segmentar a las ciudades en el presente análisis. Una vez unificadas las mismas, contamos con un total de 239 ciudades de amércia latina.</p>
+									<p style="text-align: center"><img style="text-align: center" src="images/count.png" /></p>
+								</div>
+								<h2> Criterios de preselección de Ciudades </h2>
+								<div>
+									<p style="text-align: justify">El principal objetivo de este trabajo consiste en evaluar a las ciudades de acuerdo a diferentes características y lograr una preselección de urbes que permita su posterior comparación. Se intentará segmentar a las ciudades a partir de distintos criterios para luego utilizarlas a modo de “grupos de control” en análisis más exhaustivos. Se caracterizará a las urbes de acuerdo a su población, sus principales sectores económicos y su cercanía a “grandes mercados”. Más concretamente, los criterios de segmentación se pueden resumir de la siguiente manera:</p>
+									<ul>
+									<li style="text-align: justify"><b>Principales actividades económicas de la ciudad:</b> El primer criterio utilizado corresponde a la participación de tres actividades económicas seleccionadas en las masas salariales totales de cada ciudad. Las actividades elegidas por su importancia fueron: Agrícola (actividades primarias), Industrias de Baja Tecnología y Resto de la Industria Manufacturera. Para cada uno de esos sectores, se calculó la proporción de la masa salarial que ese sector representa en la masa salarial total de la ciudad, para luego dividirla por el promedio de ese mismo valor a nivel nacional. De esta manera, si el valor del ratio se encuentra por encima de uno, significa que la masa salarial que aporta el sector en cuestión en la ciudad es mayor al valor promedio para el país y denotaría cierta especialización de la urbe en esa actividad económica. Este enfoque permite seleccionar tres grupos de ciudades por la importancia que los sectores elegidos tienen en su actividad económica total y lograr un ejercicio comparativo más enriquecedor. La selección corresponde a las ciudades que presentaron los mayores ratios para cada país.</li>
+									<li style="text-align: justify"><b>Población del Área Metropolitana:</b> El segundo segmento se conforma de ciudades que forman parte de zonas metropolitanas de importancia. Habiendo filtrado inicialmente las “grandes metrópolis” de la región, este criterio permite encontrar ciudades que componen polos económicos de importancia y representan mercados atractivos en sí mismos. Si bien el criterio no estuvo relacionado con la cercanía/lejanía a mercados de importancia, muchas de estas ciudades no logran acceder a porcentajes importantes de las masas salariales de su país en menos de 9 horas de automóvil.</li>
+									<li style="text-align: justify"><b>Cercanía a Mercados:</b> El último grupo se compone de ciudades que poseen uno o más centros de consumo significativos a una distancia que se pueda recorrer en menos de 9 horas (en automóvil). Estos centros de consumo son grandes en relación a la ciudad en cuestión y deberían generar un impacto significativo en la actividad económica de la urbe. Para este parámetro, se calculó cuánto crece la masa salarial a la que se puede acceder desde la ciudad en menos de 9 horas de automóvil. Este valor resulta de dividir la masa salarial total del país a la que se puede acceder en menos de 9 horas de automóvil desde la ciudad, por la masa salarial total de la ciudad. Esto representa entonces un coeficiente de “Multiplicación de masa salarial”.</li>
+									</ul>
+									<p style="text-align: justify">Una vez preseleccionadas las ciudades que componen cada grupo, se mostrarán variables relacionadas a la productividad que se encuentran disponibles. Dichas variables serán:</p>
+									<ul>
+									<li style="text-align: justify">Población de la ciudad</li>
+									<li style="text-align: justify">Población total de la zona metropolitana (en caso de que esté disponible)</li>
+									<li style="text-align: justify">Salario por hora en USD (ajustados por “paridad de poder adquisitivo” del año 2011)</li>
+									<li style="text-align: justify">Tasa de desempleo</li>
+									<li style="text-align: justify">Porcentaje de asalariados informales</li>
+									<li style="text-align: justify">Porcentaje de la población con secundario finalizado</li>
+									<li style="text-align: justify">Porcentaje de la población con educación superior finalizada</li>
+									<li style="text-align: justify">Porcentaje de la masa salarial del país a la que se puede acceder en menos de 8 horas de automóvil (en caso de que sea relevante)</li>
+									<li style="text-align: justify">Multiplicador de la masa salarial en menos de 9 horas de automóvil (en caso de que sea relevante)</li>
+									</ul>
+								</div>
+							</div>	
+							<h1>Selección de ciudades según actividad económica</h1>
+							<div style="text-align: justify">
+								<p style="text-align: justify">Como se mencionó más arriba, se seleccionaron tres grupos de ciudades según la participación de tres actividades económicas de interés: Agropecuaria, Industria de Baja Tecnología y Resto de la Industria. El criterio aplicado a la base de 239 ciudades, para cada uno de estos grupos, fue el mismo:</p>
+								<ol>
+								<li style="text-align: justify">De la base inicial se eliminan las urbes cuya zona metropolitana posea más de 5 millones de habitantes. A partir de lo anterior se eliminan 8 ciudades de esa base, las cuáles se muestran en la tabla 1.
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 1: Ciudades eliminadas por población</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población estimada de Zona Metro (millones)</th>
+											<th>Salario Horario (PPP 2011)</th>
+											<th>Tasa de Desempleo</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th>Argentina</th>
+											<th>CABA y Partidos del GBA</th>
+											<td>15.41</td>
+											<td>4.84</td>
+											<td>12.52</td>
+										  </tr>
+										  <tr>
+											<th rowspan="3" valign="top">Brasil</th>
+											<th>Belo Horizonte</th>
+											<td>5.83</td>
+											<td>4.83</td>
+											<td>10.39</td>
+										  </tr>
+										  <tr>
+											<th>Rio de Janeiro</th>
+											<td>12.28</td>
+											<td>6.60</td>
+											<td>14.52</td>
+										  </tr>
+										  <tr>
+											<th>Sao Paulo</th>
+											<td>21.09</td>
+											<td>6.61</td>
+											<td>12.26</td>
+										  </tr>
+										  <tr>
+											<th>Chile</th>
+											<th>Región Metropolitana de Santiago</th>
+											<td>6.68</td>
+											<td>8.32</td>
+											<td>7.62</td>
+										  </tr>
+										  <tr>
+											<th>Colombia</th>
+											<th>Bogota</th>
+											<td>9.29</td>
+											<td>5.56</td>
+											<td>10.43</td>
+										  </tr>
+										  <tr>
+											<th>Mexico</th>
+											<th>Valle de México</th>
+											<td>20.89</td>
+											<td>4.52</td>
+											<td>3.80</td>
+										  </tr>
+										  <tr>
+											<th>Peru</th>
+											<th>Callao y Lima</th>
+											<td>9.67</td>
+											<td>4.91</td>
+											<td>5.27</td>
+										  </tr>
+										</tbody>
+									</table>
+								<li style="text-align: justify"><p>Una vez eliminadas las grandes urbes, contamos con 231 ciudades disponibles para analizar. Esta entrega busca trabajar con ciudades intermedias (en términos de poblaciones) de cada país. Es por lo anterior que, de la muestra de 231 ciudades, se toman las ciudades de cada país que se encuentren por encima del percentil 50 de población. Es decir, nos quedaremos con la mitad de las ciudades de cada país que posean mayor población. En total, contamos con 118 ciudades de latinoamérica. El gráfico 2 muestra la cantidad de ciudades totales de cada país con las que se trabajará la sección de "sectores".</p>
+									<p style="text-align: center"><img style="text-align: center" src="images/count2.png" /></p>
+									<p style="text-align: justify">Esta muestra de ciudades es la que será utilizada para los tres análisis de sectores que siguen. Los pasos 3, 4 y 5 serán repetidos para esta misma base, pero cambiando el sector económico a analizar.</p></li>
+								<li style="text-align: justify">El paso siguiente consiste en calcular, para cada ciudad, el porcentaje de la masa salarial adjudicada al sector en cuestión (Agro, Baja Tecnología y Resto de la industria). Además calculamos el valor promedio de ese sector para todas las ciudades de ese país (de la muestra de 118 ciudades). Además, para facilitar la comparación, se calcula el ratio entre el valor de la ciudad y el promedio del país.</li>
+								<li style="text-align: justify">Por último, se preseleccionan las ciudades que presentan los valores de ratios más altos para cada país: serán elegidas las principales cinco ciudades de cada sector para los casos de Argentina, Brasil, Colombia y Mexico, mientras que para el resto de los países se preseleccionarán sólo las dos primeras.</li>
+								</ol>
+								<p style="text-align: justify">Si bien la preselección de ciudades de cada sector no significa que dicha actividad será la más importante de la ciudad, si denota que esta aporta una masa salarial significativa en comparación con el promedio del país.</p>
+								<h2>Sector Agrícola y actividades primarias</h2>
+								<div>
+									<p style="text-align: justify">El criterio se aplicó de manera general para todas las ciudades que pasaron el filtro de población intermedia. Como se mencionó más arriba, se muestran las cinco principales ciudades de Argentina, Brasil, México y Colombia y las dos principales ciudades para el resto de los países. La tabla 2 muestra los cálculos de proporción de masa salarial afectada a actividades agropecuarias para estas ciudades. Además se muestra el promedio de dicho valor para cada país, y la relación entre los dos anteriores (ratio). Las ciudades se ordenan primero por país (alfabéticamente), y luego por la relación entre los coeficientes de masa salarial de la ciudad y el país (decreciente).</p>
+										<table border="1" class="dataframe">
+											<caption style="font-weight: bold">Tabla 2: Preselección de ciudades del sector agropecuario</caption>
+											<thead>
+											<tr style="text-align: right;">
+												<th></th>
+												<th></th>
+												<th>Población estimada (millones)</th>
+												<th>Participación sector agropecuario en M.S.</th>
+												<th>Promedio País</th>
+												<th>Relación</th>
+											</tr>
+											<tr>
+												<th>Country</th>
+												<th>City</th>
+												<th></th>
+												<th></th>
+												<th></th>
+												<th></th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<th rowspan="5" valign="top">Argentina</th>
+												<th>Neuquen-Plottier</th>
+												<td>0.34</td>
+												<td>0.08</td>
+												<td>0.02</td>
+												<td>3.55</td>
+											</tr>
+											<tr>
+												<th>Gran San Juan</th>
+												<td>0.47</td>
+												<td>0.04</td>
+												<td>0.02</td>
+												<td>1.88</td>
+											</tr>
+											<tr>
+												<th>Gran Mendoza</th>
+												<td>1.08</td>
+												<td>0.04</td>
+												<td>0.02</td>
+												<td>1.69</td>
+											</tr>
+											<tr>
+												<th>Bahia Blanca-Cerri</th>
+												<td>0.31</td>
+												<td>0.03</td>
+												<td>0.02</td>
+												<td>1.25</td>
+											</tr>
+											<tr>
+												<th>Gran Tucuman-Tafi Viejo</th>
+												<td>1.45</td>
+												<td>0.03</td>
+												<td>0.02</td>
+												<td>1.21</td>
+											</tr>
+											<tr>
+												<th rowspan="5" valign="top">Brasil</th>
+												<th>Goiania</th>
+												<td>2.42</td>
+												<td>0.11</td>
+												<td>0.03</td>
+												<td>3.18</td>
+											</tr>
+											<tr>
+												<th>Fortaleza</th>
+												<td>3.99</td>
+												<td>0.05</td>
+												<td>0.03</td>
+												<td>1.56</td>
+											</tr>
+											<tr>
+												<th>Vitoria</th>
+												<td>1.91</td>
+												<td>0.05</td>
+												<td>0.03</td>
+												<td>1.39</td>
+											</tr>
+											<tr>
+												<th>Belem</th>
+												<td>2.40</td>
+												<td>0.03</td>
+												<td>0.03</td>
+												<td>0.94</td>
+											</tr>
+											<tr>
+												<th>Curitiba</th>
+												<td>3.60</td>
+												<td>0.03</td>
+												<td>0.03</td>
+												<td>0.90</td>
+											</tr>
+											<tr>
+												<th rowspan="5" valign="top">Colombia</th>
+												<th>Bucaramanga</th>
+												<td>1.12</td>
+												<td>0.05</td>
+												<td>0.03</td>
+												<td>1.64</td>
+											</tr>
+											<tr>
+												<th>Villavicencio</th>
+												<td>0.53</td>
+												<td>0.05</td>
+												<td>0.03</td>
+												<td>1.58</td>
+											</tr>
+											<tr>
+												<th>Armenia</th>
+												<td>2.96</td>
+												<td>0.04</td>
+												<td>0.03</td>
+												<td>1.41</td>
+											</tr>
+											<tr>
+												<th>Santa Marta</th>
+												<td>0.52</td>
+												<td>0.03</td>
+												<td>0.03</td>
+												<td>1.13</td>
+											</tr>
+											<tr>
+												<th>Pereira</th>
+												<td>0.59</td>
+												<td>0.03</td>
+												<td>0.03</td>
+												<td>1.05</td>
+											</tr>
+											<tr>
+												<th rowspan="5" valign="top">Mexico</th>
+												<th>La Laguna</th>
+												<td>1.22</td>
+												<td>0.05</td>
+												<td>0.02</td>
+												<td>1.97</td>
+											</tr>
+											<tr>
+												<th>Hermosillo</th>
+												<td>0.81</td>
+												<td>0.04</td>
+												<td>0.02</td>
+												<td>1.80</td>
+											</tr>
+											<tr>
+												<th>Mérida</th>
+												<td>0.78</td>
+												<td>0.04</td>
+												<td>0.02</td>
+												<td>1.52</td>
+											</tr>
+											<tr>
+												<th>Colima-Villa de Álvarez</th>
+												<td>0.71</td>
+												<td>0.04</td>
+												<td>0.02</td>
+												<td>1.52</td>
+											</tr>
+											<tr>
+												<th>Culiacán</th>
+												<td>3.22</td>
+												<td>0.03</td>
+												<td>0.02</td>
+												<td>1.41</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Bolivia</th>
+												<th>Tomas Frías/Potosí</th>
+												<td>0.21</td>
+												<td>0.20</td>
+												<td>0.07</td>
+												<td>3.10</td>
+											</tr>
+											<tr>
+												<th>Cercado/Oruro</th>
+												<td>0.26</td>
+												<td>0.06</td>
+												<td>0.07</td>
+												<td>0.89</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Chile</th>
+												<th>Calama</th>
+												<td>0.18</td>
+												<td>0.28</td>
+												<td>0.11</td>
+												<td>2.52</td>
+											</tr>
+											<tr>
+												<th>Copiapo</th>
+												<td>0.18</td>
+												<td>0.25</td>
+												<td>0.11</td>
+												<td>2.23</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Ecuador</th>
+												<th>Machala</th>
+												<td>0.24</td>
+												<td>0.13</td>
+												<td>0.04</td>
+												<td>2.91</td>
+											</tr>
+											<tr>
+												<th>Manta</th>
+												<td>0.22</td>
+												<td>0.06</td>
+												<td>0.04</td>
+												<td>1.41</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Paraguay</th>
+												<th>Itapúa</th>
+												<td>0.61</td>
+												<td>0.34</td>
+												<td>0.13</td>
+												<td>2.65</td>
+											</tr>
+											<tr>
+												<th>Alto Paraná</th>
+												<td>0.83</td>
+												<td>0.03</td>
+												<td>0.13</td>
+												<td>0.20</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Peru</th>
+												<th>Sullana</th>
+												<td>0.16</td>
+												<td>0.29</td>
+												<td>0.12</td>
+												<td>2.48</td>
+											</tr>
+											<tr>
+												<th>Cajamarca</th>
+												<td>0.20</td>
+												<td>0.21</td>
+												<td>0.12</td>
+												<td>1.77</td>
+											</tr>
+											<tr>
+												<th rowspan="2" valign="top">Uruguay</th>
+												<th>Rocha</th>
+												<td>0.07</td>
+												<td>0.15</td>
+												<td>0.10</td>
+												<td>1.56</td>
+											</tr>
+											<tr>
+												<th>Melo</th>
+												<td>0.09</td>
+												<td>0.15</td>
+												<td>0.10</td>
+												<td>1.53</td>
+											</tr>
+											</tbody>
+										</table>
+									<p style="text-align: justify">Para presentar indicadores adicionales de este grupo, selecionamos las ciudades con mayor ratio para cada país, y agregamos las que presentan mayor población para Argentina, Brasil, Colombia y Mexico. En la tabla 3 se observan indicadores relacionados a la productividad de estas urbes.</p>
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 3: Comparativo de ciudades del sector agropecuario</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población (millones)</th>
+											<th>Salario Hora USD (PPP 2011)</th>
+											<th>Brecha: Salario / Salario ciudad principal</th>
+											<th>% informalidad</th>
+											<th>% desempleo</th>
+											<th>% Secundario Completo</th>
+											<th>% Superior Completo</th>
+											<th>Proporción masa salarial en &lt; 8hs</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th rowspan="2" valign="top">Argentina</th>
+											<th>Neuquen-Plottier</th>
+											<td>0.34</td>
+											<td>6.57</td>
+											<td>0.84</td>
+											<td>21.16</td>
+											<td>4.48</td>
+											<td>32.31</td>
+											<td>14.14</td>
+											<td>0.53</td>
+										  </tr>
+										  <tr>
+											<th>Gran Tucuman-Tafi Viejo</th>
+											<td>1.45</td>
+											<td>4.45</td>
+											<td>0.57</td>
+											<td>47.71</td>
+											<td>10.32</td>
+											<td>42.95</td>
+											<td>10.20</td>
+											<td>0.13</td>
+										  </tr>
+										  <tr>
+											<th>Bolivia</th>
+											<th>Tomas Frías/Potosí</th>
+											<td>0.21</td>
+											<td>6.02</td>
+											<td>1.28</td>
+											<td>54.88</td>
+											<td>13.18</td>
+											<td>33.96</td>
+											<td>10.52</td>
+											<td>0.36</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Brasil</th>
+											<th>Goiania</th>
+											<td>2.42</td>
+											<td>4.75</td>
+											<td>0.72</td>
+											<td>23.67</td>
+											<td>11.00</td>
+											<td>40.48</td>
+											<td>11.15</td>
+											<td>0.06</td>
+										  </tr>
+										  <tr>
+											<th>Fortaleza</th>
+											<td>3.99</td>
+											<td>4.32</td>
+											<td>0.65</td>
+											<td>31.77</td>
+											<td>11.10</td>
+											<td>38.10</td>
+											<td>9.95</td>
+											<td>0.04</td>
+										  </tr>
+										  <tr>
+											<th>Chile</th>
+											<th>Calama</th>
+											<td>0.18</td>
+											<td>9.50</td>
+											<td>1.14</td>
+											<td>6.54</td>
+											<td>6.57</td>
+											<td>nan</td>
+											<td>12.15</td>
+											<td>0.09</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Colombia</th>
+											<th>Bucaramanga</th>
+											<td>1.12</td>
+											<td>3.04</td>
+											<td>0.55</td>
+											<td>43.28</td>
+											<td>9.82</td>
+											<td>35.88</td>
+											<td>7.79</td>
+											<td>0.18</td>
+										  </tr>
+										  <tr>
+											<th>Armenia</th>
+											<td>2.96</td>
+											<td>3.39</td>
+											<td>0.61</td>
+											<td>31.33</td>
+											<td>7.87</td>
+											<td>36.44</td>
+											<td>8.64</td>
+											<td>0.76</td>
+										  </tr>
+										  <tr>
+											<th>Ecuador</th>
+											<th>Machala</th>
+											<td>0.24</td>
+											<td>4.97</td>
+											<td>0.88</td>
+											<td>43.75</td>
+											<td>4.18</td>
+											<td>42.23</td>
+											<td>11.31</td>
+											<td>0.60</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Mexico</th>
+											<th>La Laguna</th>
+											<td>1.22</td>
+											<td>4.06</td>
+											<td>0.90</td>
+											<td>45.86</td>
+											<td>4.14</td>
+											<td>29.63</td>
+											<td>12.38</td>
+											<td>0.39</td>
+										  </tr>
+										  <tr>
+											<th>Culiacán</th>
+											<td>3.22</td>
+											<td>4.60</td>
+											<td>1.02</td>
+											<td>51.79</td>
+											<td>4.36</td>
+											<td>39.34</td>
+											<td>18.46</td>
+											<td>0.09</td>
+										  </tr>
+										  <tr>
+											<th>Paraguay</th>
+											<th>Itapúa</th>
+											<td>0.61</td>
+											<td>5.78</td>
+											<td>0.79</td>
+											<td>64.67</td>
+											<td>3.69</td>
+											<td>40.27</td>
+											<td>13.34</td>
+											<td>0.34</td>
+										  </tr>
+										  <tr>
+											<th>Peru</th>
+											<th>Sullana</th>
+											<td>0.16</td>
+											<td>3.79</td>
+											<td>0.77</td>
+											<td>91.30</td>
+											<td>3.06</td>
+											<td>41.06</td>
+											<td>13.82</td>
+											<td>0.12</td>
+										  </tr>
+										  <tr>
+											<th>Uruguay</th>
+											<th>Rocha</th>
+											<td>0.07</td>
+											<td>6.09</td>
+											<td>0.75</td>
+											<td>12.86</td>
+											<td>10.68</td>
+											<td>21.43</td>
+											<td>6.60</td>
+											<td>0.91</td>
+										  </tr>
+										</tbody>
+									</table>
+								</div>
+								<h2>Sector Industrias de Baja tecnología</h2>
+								<div>
+									<p style="text-align: justify">El criterio se aplicó de manera general para todas las ciudades que pasaron el filtro de población intermedia. Como se mencionó más arriba, se muestran las cinco principales ciudades de Argentina, Brasil, México y Colombia y las dos principales ciudades para el resto de los países. La tabla 4 muestra los cálculos de proporción de masa salarial afectada a actividades de Industrias de Baja Tecnología para estas ciudades. Además se muestra el promedio de dicho valor para cada país, y la relación entre los dos anteriores (ratio). Las ciudades se ordenan primero por país (alfabéticamente), y luego por la relación entre los coeficientes de masa salarial de la ciudad y el país (decreciente).</p>
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 4: Preselección de ciudades del sector Industrias de Baja Tecnología</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población estimada (millones)</th>
+											<th>Participación sector Baja Tec en M.S.</th>
+											<th>Promedio País</th>
+											<th>Relación</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th rowspan="5" valign="top">Argentina</th>
+											<th>Mar del Plata-Batan</th>
+											<td>0.66</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.86</td>
+										  </tr>
+										  <tr>
+											<th>Gran Rosario</th>
+											<td>1.43</td>
+											<td>0.06</td>
+											<td>0.04</td>
+											<td>1.50</td>
+										  </tr>
+										  <tr>
+											<th>Gran San Juan</th>
+											<td>0.47</td>
+											<td>0.05</td>
+											<td>0.04</td>
+											<td>1.24</td>
+										  </tr>
+										  <tr>
+											<th>Gran Mendoza</th>
+											<td>1.08</td>
+											<td>0.05</td>
+											<td>0.04</td>
+											<td>1.17</td>
+										  </tr>
+										  <tr>
+											<th>Gran Cordoba</th>
+											<td>1.52</td>
+											<td>0.05</td>
+											<td>0.04</td>
+											<td>1.12</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Brasil</th>
+											<th>Fortaleza</th>
+											<td>3.99</td>
+											<td>0.04</td>
+											<td>0.02</td>
+											<td>1.87</td>
+										  </tr>
+										  <tr>
+											<th>Vitoria</th>
+											<td>1.91</td>
+											<td>0.03</td>
+											<td>0.02</td>
+											<td>1.44</td>
+										  </tr>
+										  <tr>
+											<th>Goiania</th>
+											<td>2.42</td>
+											<td>0.03</td>
+											<td>0.02</td>
+											<td>1.32</td>
+										  </tr>
+										  <tr>
+											<th>Natal</th>
+											<td>1.50</td>
+											<td>0.03</td>
+											<td>0.02</td>
+											<td>1.25</td>
+										  </tr>
+										  <tr>
+											<th>Curitiba</th>
+											<td>3.60</td>
+											<td>0.03</td>
+											<td>0.02</td>
+											<td>1.14</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Colombia</th>
+											<th>Medellin</th>
+											<td>3.78</td>
+											<td>0.09</td>
+											<td>0.06</td>
+											<td>1.50</td>
+										  </tr>
+										  <tr>
+											<th>Bucaramanga</th>
+											<td>1.12</td>
+											<td>0.08</td>
+											<td>0.06</td>
+											<td>1.31</td>
+										  </tr>
+										  <tr>
+											<th>Cucuta</th>
+											<td>0.75</td>
+											<td>0.08</td>
+											<td>0.06</td>
+											<td>1.28</td>
+										  </tr>
+										  <tr>
+											<th>Ibague</th>
+											<td>0.53</td>
+											<td>0.08</td>
+											<td>0.06</td>
+											<td>1.22</td>
+										  </tr>
+										  <tr>
+											<th>Cali</th>
+											<td>2.91</td>
+											<td>0.07</td>
+											<td>0.06</td>
+											<td>1.18</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Mexico</th>
+											<th>Tlaxcala-Apizaco</th>
+											<td>1.27</td>
+											<td>0.13</td>
+											<td>0.05</td>
+											<td>2.42</td>
+										  </tr>
+										  <tr>
+											<th>Puebla-Tlaxcala</th>
+											<td>2.94</td>
+											<td>0.11</td>
+											<td>0.05</td>
+											<td>2.04</td>
+										  </tr>
+										  <tr>
+											<th>La Laguna</th>
+											<td>1.22</td>
+											<td>0.07</td>
+											<td>0.05</td>
+											<td>1.39</td>
+										  </tr>
+										  <tr>
+											<th>Toluca</th>
+											<td>2.12</td>
+											<td>0.07</td>
+											<td>0.05</td>
+											<td>1.38</td>
+										  </tr>
+										  <tr>
+											<th>Guadalajara</th>
+											<td>4.80</td>
+											<td>0.06</td>
+											<td>0.05</td>
+											<td>1.19</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Bolivia</th>
+											<th>Cercado/Cochabamba</th>
+											<td>1.92</td>
+											<td>0.14</td>
+											<td>0.11</td>
+											<td>1.25</td>
+										  </tr>
+										  <tr>
+											<th>Pedro Domingo Murillo/La Paz y el Alto</th>
+											<td>2.87</td>
+											<td>0.14</td>
+											<td>0.11</td>
+											<td>1.23</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Chile</th>
+											<th>Osorno</th>
+											<td>0.14</td>
+											<td>0.08</td>
+											<td>0.03</td>
+											<td>2.35</td>
+										  </tr>
+										  <tr>
+											<th>Puerto Montt</th>
+											<td>0.21</td>
+											<td>0.05</td>
+											<td>0.03</td>
+											<td>1.60</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Ecuador</th>
+											<th>Manta</th>
+											<td>0.22</td>
+											<td>0.14</td>
+											<td>0.06</td>
+											<td>2.31</td>
+										  </tr>
+										  <tr>
+											<th>Guayaquil</th>
+											<td>2.95</td>
+											<td>0.07</td>
+											<td>0.06</td>
+											<td>1.20</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Paraguay</th>
+											<th>Central</th>
+											<td>2.20</td>
+											<td>0.09</td>
+											<td>0.07</td>
+											<td>1.26</td>
+										  </tr>
+										  <tr>
+											<th>Alto Paraná</th>
+											<td>0.83</td>
+											<td>0.06</td>
+											<td>0.07</td>
+											<td>0.89</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Peru</th>
+											<th>Trujillo</th>
+											<td>0.92</td>
+											<td>0.10</td>
+											<td>0.05</td>
+											<td>1.95</td>
+										  </tr>
+										  <tr>
+											<th>Pisco</th>
+											<td>0.11</td>
+											<td>0.09</td>
+											<td>0.05</td>
+											<td>1.74</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Uruguay</th>
+											<th>Melo</th>
+											<td>0.09</td>
+											<td>0.07</td>
+											<td>0.05</td>
+											<td>1.31</td>
+										  </tr>
+										  <tr>
+											<th>Durazno</th>
+											<td>0.06</td>
+											<td>0.06</td>
+											<td>0.05</td>
+											<td>1.27</td>
+										  </tr>
+										</tbody>
+									</table>
+									<p style="text-align: justify">Para presentar indicadores adicionales de este grupo, selecionamos las ciudades con mayor ratio para cada país, y agregamos las que presentan mayor población para Argentina, Brasil, Colombia y Mexico. En los casos en los que, para estos cuatro países, la ciudad de mayor ratio también sea la de mayor población, se agregará la segundo ciudad del país con mayor ratio. En la tabla 5 se observan indicadores relacionados a la productividad de estas urbes.</p>
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 5: Comparativo de ciudades del sector Industrias de Baja Tecnología</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población (millones)</th>
+											<th>Salario Hora USD (PPP 2011)</th>
+											<th>Brecha: Salario / Salario ciudad principal</th>
+											<th>% informalidad</th>
+											<th>% desempleo</th>
+											<th>% Secundario Completo</th>
+											<th>% Superior Completo</th>
+											<th>Proporción masa salarial en &lt; 8hs</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th rowspan="2" valign="top">Argentina</th>
+											<th>Mar del Plata-Batan</th>
+											<td>0.66</td>
+											<td>6.46</td>
+											<td>0.83</td>
+											<td>36.68</td>
+											<td>11.30</td>
+											<td>nan</td>
+											<td>13.18</td>
+											<td>0.74</td>
+										  </tr>
+										  <tr>
+											<th>Gran Cordoba</th>
+											<td>1.52</td>
+											<td>4.64</td>
+											<td>0.60</td>
+											<td>38.95</td>
+											<td>12.75</td>
+											<td>nan</td>
+											<td>14.50</td>
+											<td>0.86</td>
+										  </tr>
+										  <tr>
+											<th>Bolivia</th>
+											<th>Cercado/Cochabamba</th>
+											<td>1.92</td>
+											<td>5.16</td>
+											<td>1.10</td>
+											<td>62.52</td>
+											<td>4.81</td>
+											<td>39.99</td>
+											<td>11.85</td>
+											<td>0.53</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Brasil</th>
+											<th>Fortaleza</th>
+											<td>3.99</td>
+											<td>4.32</td>
+											<td>0.65</td>
+											<td>31.77</td>
+											<td>11.10</td>
+											<td>38.10</td>
+											<td>9.95</td>
+											<td>0.04</td>
+										  </tr>
+										  <tr>
+											<th>Vitoria</th>
+											<td>1.91</td>
+											<td>5.42</td>
+											<td>0.82</td>
+											<td>20.02</td>
+											<td>10.95</td>
+											<td>42.51</td>
+											<td>13.73</td>
+											<td>0.03</td>
+										  </tr>
+										  <tr>
+											<th>Chile</th>
+											<th>Osorno</th>
+											<td>0.14</td>
+											<td>5.67</td>
+											<td>0.68</td>
+											<td>19.53</td>
+											<td>7.76</td>
+											<td>nan</td>
+											<td>12.95</td>
+											<td>0.14</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Colombia</th>
+											<th>Medellin</th>
+											<td>3.78</td>
+											<td>3.55</td>
+											<td>0.64</td>
+											<td>27.66</td>
+											<td>13.90</td>
+											<td>39.63</td>
+											<td>7.86</td>
+											<td>0.33</td>
+										  </tr>
+										  <tr>
+											<th>Bucaramanga</th>
+											<td>1.12</td>
+											<td>3.04</td>
+											<td>0.55</td>
+											<td>43.28</td>
+											<td>9.82</td>
+											<td>35.88</td>
+											<td>7.79</td>
+											<td>0.18</td>
+										  </tr>
+										  <tr>
+											<th>Ecuador</th>
+											<th>Manta</th>
+											<td>0.22</td>
+											<td>4.69</td>
+											<td>0.84</td>
+											<td>40.45</td>
+											<td>4.73</td>
+											<td>38.54</td>
+											<td>7.75</td>
+											<td>0.86</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Mexico</th>
+											<th>Tlaxcala-Apizaco</th>
+											<td>1.27</td>
+											<td>3.27</td>
+											<td>0.72</td>
+											<td>69.13</td>
+											<td>3.42</td>
+											<td>32.89</td>
+											<td>12.49</td>
+											<td>0.42</td>
+										  </tr>
+										  <tr>
+											<th>Guadalajara</th>
+											<td>4.80</td>
+											<td>4.93</td>
+											<td>1.09</td>
+											<td>52.88</td>
+											<td>3.42</td>
+											<td>32.57</td>
+											<td>13.86</td>
+											<td>0.42</td>
+										  </tr>
+										  <tr>
+											<th>Paraguay</th>
+											<th>Central</th>
+											<td>2.20</td>
+											<td>5.19</td>
+											<td>0.71</td>
+											<td>52.65</td>
+											<td>6.48</td>
+											<td>39.76</td>
+											<td>9.71</td>
+											<td>0.66</td>
+										  </tr>
+										  <tr>
+											<th>Peru</th>
+											<th>Trujillo</th>
+											<td>0.92</td>
+											<td>4.26</td>
+											<td>0.87</td>
+											<td>92.15</td>
+											<td>4.63</td>
+											<td>47.89</td>
+											<td>17.82</td>
+											<td>0.14</td>
+										  </tr>
+										  <tr>
+											<th>Uruguay</th>
+											<th>Melo</th>
+											<td>0.09</td>
+											<td>4.96</td>
+											<td>0.61</td>
+											<td>21.57</td>
+											<td>5.20</td>
+											<td>19.88</td>
+											<td>6.08</td>
+											<td>0.96</td>
+										  </tr>
+										</tbody>
+									</table>
+								</div>
+								<h2>Resto de la Industria Manufacturera</h2>
+								<div>
+									<p style="text-align: justify">El criterio se aplicó de manera general para todas las ciudades que pasaron el filtro de población intermedia. Como se mencionó más arriba, se muestran las cinco principales ciudades de Argentina, Brasil, México y Colombia y las dos principales ciudades para el resto de los países. La tabla 6 muestra los cálculos de proporción de masa salarial afectada a actividades de Resto de las Industrias Manufactureras para estas ciudades. Además se muestra el promedio de dicho valor para cada país, y la relación entre los dos anteriores (ratio). Las ciudades se ordenan primero por país (alfabéticamente), y luego por la relación entre los coeficientes de masa salarial de la ciudad y el país (decreciente).</p>
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 6: Preselección de ciudades del sector Resto de Industrias Manufactureras</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población estimada (millones)</th>
+											<th>Resto Ind</th>
+											<th>Promedio País</th>
+											<th>Relación</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th rowspan="5" valign="top">Argentina</th>
+											<th>Gran Rosario</th>
+											<td>1.43</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.90</td>
+										  </tr>
+										  <tr>
+											<th>Bahia Blanca-Cerri</th>
+											<td>0.31</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.85</td>
+										  </tr>
+										  <tr>
+											<th>Gran Cordoba</th>
+											<td>1.52</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.79</td>
+										  </tr>
+										  <tr>
+											<th>Gran Mendoza</th>
+											<td>1.08</td>
+											<td>0.06</td>
+											<td>0.04</td>
+											<td>1.47</td>
+										  </tr>
+										  <tr>
+											<th>Gran San Juan</th>
+											<td>0.47</td>
+											<td>0.05</td>
+											<td>0.04</td>
+											<td>1.26</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Brasil</th>
+											<th>Manaus</th>
+											<td>2.52</td>
+											<td>0.20</td>
+											<td>0.07</td>
+											<td>2.84</td>
+										  </tr>
+										  <tr>
+											<th>Curitiba</th>
+											<td>3.60</td>
+											<td>0.14</td>
+											<td>0.07</td>
+											<td>1.89</td>
+										  </tr>
+										  <tr>
+											<th>Salvador</th>
+											<td>3.95</td>
+											<td>0.09</td>
+											<td>0.07</td>
+											<td>1.29</td>
+										  </tr>
+										  <tr>
+											<th>Vitoria</th>
+											<td>1.91</td>
+											<td>0.09</td>
+											<td>0.07</td>
+											<td>1.19</td>
+										  </tr>
+										  <tr>
+											<th>Porto Alegre</th>
+											<td>4.26</td>
+											<td>0.08</td>
+											<td>0.07</td>
+											<td>1.08</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Colombia</th>
+											<th>Cali</th>
+											<td>2.91</td>
+											<td>0.10</td>
+											<td>0.06</td>
+											<td>1.63</td>
+										  </tr>
+										  <tr>
+											<th>Barranquilla</th>
+											<td>2.03</td>
+											<td>0.09</td>
+											<td>0.06</td>
+											<td>1.47</td>
+										  </tr>
+										  <tr>
+											<th>Medellin</th>
+											<td>3.78</td>
+											<td>0.09</td>
+											<td>0.06</td>
+											<td>1.43</td>
+										  </tr>
+										  <tr>
+											<th>Cartagena</th>
+											<td>1.16</td>
+											<td>0.07</td>
+											<td>0.06</td>
+											<td>1.23</td>
+										  </tr>
+										  <tr>
+											<th>Bucaramanga</th>
+											<td>1.12</td>
+											<td>0.07</td>
+											<td>0.06</td>
+											<td>1.07</td>
+										  </tr>
+										  <tr>
+											<th rowspan="5" valign="top">Mexico</th>
+											<th>Juárez</th>
+											<td>1.32</td>
+											<td>0.33</td>
+											<td>0.12</td>
+											<td>2.69</td>
+										  </tr>
+										  <tr>
+											<th>San Luis Potosí</th>
+											<td>0.82</td>
+											<td>0.19</td>
+											<td>0.12</td>
+											<td>1.56</td>
+										  </tr>
+										  <tr>
+											<th>Chihuahua</th>
+											<td>0.81</td>
+											<td>0.17</td>
+											<td>0.12</td>
+											<td>1.42</td>
+										  </tr>
+										  <tr>
+											<th>Tijuana</th>
+											<td>1.84</td>
+											<td>0.17</td>
+											<td>0.12</td>
+											<td>1.35</td>
+										  </tr>
+										  <tr>
+											<th>Guadalajara</th>
+											<td>4.80</td>
+											<td>0.16</td>
+											<td>0.12</td>
+											<td>1.28</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Bolivia</th>
+											<th>Andrés Ibañez/Santa Cruz de la Sierra</th>
+											<td>3.15</td>
+											<td>0.00</td>
+											<td>0.00</td>
+											<td>nan</td>
+										  </tr>
+										  <tr>
+											<th>Cercado/Cochabamba</th>
+											<td>1.92</td>
+											<td>0.00</td>
+											<td>0.00</td>
+											<td>nan</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Chile</th>
+											<th>Los Angeles</th>
+											<td>0.13</td>
+											<td>0.11</td>
+											<td>0.05</td>
+											<td>2.15</td>
+										  </tr>
+										  <tr>
+											<th>Gran Concepcion</th>
+											<td>0.22</td>
+											<td>0.09</td>
+											<td>0.05</td>
+											<td>1.67</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Ecuador</th>
+											<th>Cuenca</th>
+											<td>0.33</td>
+											<td>0.10</td>
+											<td>0.05</td>
+											<td>1.78</td>
+										  </tr>
+										  <tr>
+											<th>Guayaquil</th>
+											<td>2.95</td>
+											<td>0.08</td>
+											<td>0.05</td>
+											<td>1.53</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Paraguay</th>
+											<th>Central</th>
+											<td>2.20</td>
+											<td>0.05</td>
+											<td>0.03</td>
+											<td>1.47</td>
+										  </tr>
+										  <tr>
+											<th>Alto Paraná</th>
+											<td>0.83</td>
+											<td>0.02</td>
+											<td>0.03</td>
+											<td>0.78</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Peru</th>
+											<th>Cuzco</th>
+											<td>0.43</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.84</td>
+										  </tr>
+										  <tr>
+											<th>Trujillo</th>
+											<td>0.92</td>
+											<td>0.06</td>
+											<td>0.04</td>
+											<td>1.67</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Uruguay</th>
+											<th>Montevideo</th>
+											<td>2.06</td>
+											<td>0.07</td>
+											<td>0.04</td>
+											<td>1.84</td>
+										  </tr>
+										  <tr>
+											<th>Minas</th>
+											<td>0.06</td>
+											<td>0.06</td>
+											<td>0.04</td>
+											<td>1.57</td>
+										  </tr>
+										</tbody>
+									</table>
+									<p style="text-align: justify">Para presentar indicadores adicionales de este grupo, selecionamos las ciudades con mayor ratio para cada país, y agregamos las que presentan mayor población para Argentina, Brasil, Colombia y Mexico. En los casos en los que, para estos cuatro países, la ciudad de mayor ratio también sea la de mayor población, se agregará la segundo ciudad del país con mayor ratio. En la tabla 7 se observan indicadores relacionados a la productividad de estas urbes.</p>
+									<table border="1" class="dataframe">
+										<caption style="font-weight: bold">Tabla 7: Comparativo de ciudades del sector Resto de Industrias Manufactureras</caption>
+										<thead>
+										  <tr style="text-align: right;">
+											<th></th>
+											<th></th>
+											<th>Población (millones)</th>
+											<th>Salario Hora USD (PPP 2011)</th>
+											<th>Brecha: Salario / Salario ciudad principal</th>
+											<th>% informalidad</th>
+											<th>% desempleo</th>
+											<th>% Secundario Completo</th>
+											<th>% Superior Completo</th>
+											<th>Proporción masa salarial en &lt; 8hs</th>
+										  </tr>
+										  <tr>
+											<th>Country</th>
+											<th>City</th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<th rowspan="2" valign="top">Argentina</th>
+											<th>Gran Rosario</th>
+											<td>1.43</td>
+											<td>5.29</td>
+											<td>0.68</td>
+											<td>33.80</td>
+											<td>11.05</td>
+											<td>46.14</td>
+											<td>13.99</td>
+											<td>0.82</td>
+										  </tr>
+										  <tr>
+											<th>Gran Cordoba</th>
+											<td>1.52</td>
+											<td>4.64</td>
+											<td>0.60</td>
+											<td>38.95</td>
+											<td>12.75</td>
+											<td>nan</td>
+											<td>14.50</td>
+											<td>0.86</td>
+										  </tr>
+										  <tr>
+											<th>Bolivia</th>
+											<th>Andrés Ibañez/Santa Cruz de la Sierra</th>
+											<td>3.15</td>
+											<td>5.99</td>
+											<td>1.27</td>
+											<td>63.56</td>
+											<td>4.96</td>
+											<td>39.88</td>
+											<td>10.47</td>
+											<td>0.39</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Brasil</th>
+											<th>Manaus</th>
+											<td>2.52</td>
+											<td>4.52</td>
+											<td>0.68</td>
+											<td>27.47</td>
+											<td>16.15</td>
+											<td>43.32</td>
+											<td>10.67</td>
+											<td>0.02</td>
+										  </tr>
+										  <tr>
+											<th>Porto Alegre</th>
+											<td>4.26</td>
+											<td>6.05</td>
+											<td>0.92</td>
+											<td>15.42</td>
+											<td>8.20</td>
+											<td>42.27</td>
+											<td>13.44</td>
+											<td>0.09</td>
+										  </tr>
+										  <tr>
+											<th>Chile</th>
+											<th>Los Angeles</th>
+											<td>0.13</td>
+											<td>7.07</td>
+											<td>0.85</td>
+											<td>12.64</td>
+											<td>11.21</td>
+											<td>53.16</td>
+											<td>16.52</td>
+											<td>0.83</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Colombia</th>
+											<th>Cali</th>
+											<td>2.91</td>
+											<td>4.11</td>
+											<td>0.74</td>
+											<td>39.65</td>
+											<td>12.28</td>
+											<td>40.26</td>
+											<td>8.58</td>
+											<td>0.39</td>
+										  </tr>
+										  <tr>
+											<th>Medellin</th>
+											<td>3.78</td>
+											<td>3.55</td>
+											<td>0.64</td>
+											<td>27.66</td>
+											<td>13.90</td>
+											<td>39.63</td>
+											<td>7.86</td>
+											<td>0.33</td>
+										  </tr>
+										  <tr>
+											<th>Ecuador</th>
+											<th>Cuenca</th>
+											<td>0.33</td>
+											<td>5.83</td>
+											<td>1.04</td>
+											<td>25.40</td>
+											<td>3.74</td>
+											<td>46.38</td>
+											<td>15.76</td>
+											<td>0.89</td>
+										  </tr>
+										  <tr>
+											<th rowspan="2" valign="top">Mexico</th>
+											<th>Juárez</th>
+											<td>1.32</td>
+											<td>5.42</td>
+											<td>1.20</td>
+											<td>45.07</td>
+											<td>2.16</td>
+											<td>26.26</td>
+											<td>8.24</td>
+											<td>0.05</td>
+										  </tr>
+										  <tr>
+											<th>Guadalajara</th>
+											<td>4.80</td>
+											<td>4.93</td>
+											<td>1.09</td>
+											<td>52.88</td>
+											<td>3.42</td>
+											<td>32.57</td>
+											<td>13.86</td>
+											<td>0.42</td>
+										  </tr>
+										  <tr>
+											<th>Paraguay</th>
+											<th>Central</th>
+											<td>2.20</td>
+											<td>5.19</td>
+											<td>0.71</td>
+											<td>52.65</td>
+											<td>6.48</td>
+											<td>39.76</td>
+											<td>9.71</td>
+											<td>0.66</td>
+										  </tr>
+										  <tr>
+											<th>Peru</th>
+											<th>Cuzco</th>
+											<td>0.43</td>
+											<td>4.04</td>
+											<td>0.82</td>
+											<td>93.11</td>
+											<td>1.87</td>
+											<td>59.67</td>
+											<td>24.54</td>
+											<td>0.04</td>
+										  </tr>
+										  <tr>
+											<th>Uruguay</th>
+											<th>Montevideo</th>
+											<td>2.06</td>
+											<td>8.13</td>
+											<td>1.00</td>
+											<td>7.41</td>
+											<td>8.78</td>
+											<td>35.24</td>
+											<td>13.75</td>
+											<td>0.95</td>
+										  </tr>
+										</tbody>
+									</table>
+								</div>
+
+							</div>
+							<h1>Selección de ciudades según población de Área Metropolitana</h1>
+							<div style="text-align: justify">
+								<p style="text-align: justify">El segundo criterio utilizado para seleccionar y segmentar a la ciudades tiene que ver con la población de la zona metropolitana de la urbe. Como se mencionó más arriba, se dejaron fuera de consideración a las grandes metrópolis de cada país. Luego de aplicar ese filtro, se tomaron en cuenta las ciudades cuyas Áreas Estadísticas Metropolitanas (AEM de ahora en adelante) presentaban las mayores poblaciones de los principales países de interés (Argentina, Brasil, Colombia y México) y que no hayan sido preseleccionadas en el apartado anterior de sectores. El gráfico 3 muestra las poblaciones totales de las zonas metropolitanas de las ciudades seleccionadas.</p>
+									<p style="text-align: center"><img style="text-align: center" src="images/aglomerados.png" /></p>
+								<p style="text-align: justify">Vale la pena mencionar que este grupo de ciudades no alcanza a un porcentaje significativo de la masa salarial total del país en menos de 8 horas de automóvil (a excepción de Puebla, México). La figura 4 muestra dichos valores.</p>
+									<p style="text-align: center"><img style="text-align: center" src="images/aglomerados_lejania.png" /></p>
+								<p style="text-align: justify">La tabla 8 muestra las ocho ciudades selecciondas a partir del tamaño de sus regiones metropolitanas. Los gráficos 5 y 6 muestran comparaciones de salarios y desempleo, respectivamente.</p>								
+								<table border="1" class="dataframe">
+									<caption style="font-weight: bold">Tabla 8: Selección de ciudades por la población en su zona metropolitana.</caption>
+									<thead>
+									  <tr style="text-align: right;">
+										<th></th>
+										<th></th>
+										<th>Población (millones)</th>
+										<th>Proporción masa salarial en &lt; 8hs</th>
+										<th>Salario Hora USD (PPP 2011)</th>
+										<th>% informalidad</th>
+										<th>% desempleo</th>
+										<th>% Secundario Completo</th>
+										<th>% Superior Completo</th>
+										<th>Brecha: Salario / Salario ciudad principal</th>
+									  </tr>
+									  <tr>
+										<th>Country</th>
+										<th>City</th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th rowspan="2" valign="top">Argentina</th>
+										<th>Gran Mendoza</th>
+										<td>1.08</td>
+										<td>0.08</td>
+										<td>4.76</td>
+										<td>37.82</td>
+										<td>8.46</td>
+										<td>38.40</td>
+										<td>14.49</td>
+										<td>0.61</td>
+									  </tr>
+									  <tr>
+										<th>Santiago del Estero-La Banda</th>
+										<td>0.91</td>
+										<td>0.18</td>
+										<td>3.41</td>
+										<td>46.00</td>
+										<td>4.81</td>
+										<td>41.62</td>
+										<td>10.30</td>
+										<td>0.44</td>
+									  </tr>
+									  <tr>
+										<th rowspan="2" valign="top">Brasil</th>
+										<th>Brasilia</th>
+										<td>4.20</td>
+										<td>0.05</td>
+										<td>9.56</td>
+										<td>16.68</td>
+										<td>13.50</td>
+										<td>55.20</td>
+										<td>22.35</td>
+										<td>1.45</td>
+									  </tr>
+									  <tr>
+										<th>Salvador</th>
+										<td>3.95</td>
+										<td>0.06</td>
+										<td>4.51</td>
+										<td>30.01</td>
+										<td>15.72</td>
+										<td>39.54</td>
+										<td>9.55</td>
+										<td>0.68</td>
+									  </tr>
+									  <tr>
+										<th rowspan="2" valign="top">Colombia</th>
+										<th>Barranquilla</th>
+										<td>2.03</td>
+										<td>0.14</td>
+										<td>3.54</td>
+										<td>32.14</td>
+										<td>7.42</td>
+										<td>46.86</td>
+										<td>10.08</td>
+										<td>0.64</td>
+									  </tr>
+									  <tr>
+										<th>Cartagena</th>
+										<td>1.16</td>
+										<td>0.14</td>
+										<td>4.08</td>
+										<td>29.49</td>
+										<td>10.33</td>
+										<td>46.22</td>
+										<td>10.83</td>
+										<td>0.73</td>
+									  </tr>
+									  <tr>
+										<th rowspan="2" valign="top">Mexico</th>
+										<th>Monterrey</th>
+										<td>4.48</td>
+										<td>0.11</td>
+										<td>5.84</td>
+										<td>44.84</td>
+										<td>3.45</td>
+										<td>29.62</td>
+										<td>11.76</td>
+										<td>1.29</td>
+									  </tr>
+									  <tr>
+										<th>Puebla-Tlaxcala</th>
+										<td>2.94</td>
+										<td>0.40</td>
+										<td>3.25</td>
+										<td>62.99</td>
+										<td>3.14</td>
+										<td>33.77</td>
+										<td>14.05</td>
+										<td>0.72</td>
+									  </tr>
+									</tbody>
+								</table>
+								<p style="text-align: center"><img style="text-align: center" src="images/aglomerados_23.png" /></p>
+							</div>
+							<h1>Selección de ciudades según cercanía a mercados</h1>
+							<div style="text-align: justify">
+								<p style="text-align: justify">El último grupo de ciudades se seleccionó en función del pontencial de los mercados que poseen en menos de 9 horas de automóvil. Para ello se calculó el ratio entre la masa salarial total a la que la ciudad puede acceder en menos de 9 horas, sobre la masa salarial total de la ciudad. Este valor representaría el ratio de cuántas veces se multiplica la masa salarial de la ciudad en menos de 9 horas de automóvil. El gráfico 7 muestra estos valores.</p>
+									<p style="text-align: center"><img style="text-align: center" src="images/cerca.png" /></p>
+								<p style="text-align: justify">Este análisis se aplicó en las principales economías de la región: Argentina, Brasil, Colombia y México. Se preseleccionaron las ciudades de cada país con mayores ratios y más de 250 mil habitantes. La tabla 9 muestra la selección de ciudades y algunas variables de interés. Los gráfico 8 y 9 muestran comparaciones de salarios y desempleo, respectivamente.</p>
+								<table border="1" class="dataframe">
+									<caption style="font-weight: bold">Tabla 9: Preselección de ciudades por cercanía a mercados.</caption>
+									<thead>
+									  <tr style="text-align: right;">
+										<th></th>
+										<th></th>
+										<th>Población (millones)</th>
+										<th>Multiplicador de Masa Salarial</th>
+										<th>Proporción masa salarial en &lt; 8hs</th>
+										<th>Salario Hora USD (PPP 2011)</th>
+										<th>% informalidad</th>
+										<th>% desempleo</th>
+										<th>% Secundario Completo</th>
+										<th>% Superior Completo</th>
+										<th>Brecha: Salario / Salario ciudad principal</th>
+									  </tr>
+									  <tr>
+										<th>Country</th>
+										<th>City</th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<th rowspan="5" valign="top">Argentina</th>
+										<th>Bahia Blanca-Cerri</th>
+										<td>0.31</td>
+										<td>64.27</td>
+										<td>0.72</td>
+										<td>6.50</td>
+										<td>29.32</td>
+										<td>9.01</td>
+										<td>49.04</td>
+										<td>15.71</td>
+										<td>0.83</td>
+									  </tr>
+									  <tr>
+										<th>Corrientes</th>
+										<td>0.35</td>
+										<td>7.97</td>
+										<td>0.07</td>
+										<td>4.34</td>
+										<td>40.39</td>
+										<td>6.07</td>
+										<td>45.20</td>
+										<td>15.57</td>
+										<td>0.56</td>
+									  </tr>
+									  <tr>
+										<th>Gran Resistencia</th>
+										<td>0.29</td>
+										<td>14.47</td>
+										<td>0.07</td>
+										<td>3.77</td>
+										<td>38.74</td>
+										<td>1.61</td>
+										<td>43.13</td>
+										<td>11.07</td>
+										<td>0.48</td>
+									  </tr>
+									  <tr>
+										<th>Gran Santa Fe</th>
+										<td>0.41</td>
+										<td>63.97</td>
+										<td>0.82</td>
+										<td>4.88</td>
+										<td>27.10</td>
+										<td>6.54</td>
+										<td>45.22</td>
+										<td>14.28</td>
+										<td>0.63</td>
+									  </tr>
+									  <tr>
+										<th>Jujuy-Palpala</th>
+										<td>0.27</td>
+										<td>12.32</td>
+										<td>0.08</td>
+										<td>3.91</td>
+										<td>33.87</td>
+										<td>9.41</td>
+										<td>nan</td>
+										<td>14.23</td>
+										<td>0.50</td>
+									  </tr>
+									  <tr>
+										<th rowspan="6" valign="top">Brasil</th>
+										<th>Aracaju</th>
+										<td>0.62</td>
+										<td>13.58</td>
+										<td>0.09</td>
+										<td>4.43</td>
+										<td>30.17</td>
+										<td>16.10</td>
+										<td>36.91</td>
+										<td>10.54</td>
+										<td>0.67</td>
+									  </tr>
+									  <tr>
+										<th>Florianopolis</th>
+										<td>1.34</td>
+										<td>18.90</td>
+										<td>0.14</td>
+										<td>5.94</td>
+										<td>10.31</td>
+										<td>6.51</td>
+										<td>43.25</td>
+										<td>14.02</td>
+										<td>0.90</td>
+									  </tr>
+									  <tr>
+										<th>Florianopolis</th>
+										<td>1.34</td>
+										<td>18.90</td>
+										<td>0.14</td>
+										<td>5.94</td>
+										<td>10.31</td>
+										<td>6.51</td>
+										<td>43.25</td>
+										<td>14.02</td>
+										<td>0.90</td>
+									  </tr>
+									  <tr>
+										<th>Joao Pessoa</th>
+										<td>1.25</td>
+										<td>6.78</td>
+										<td>0.06</td>
+										<td>4.56</td>
+										<td>31.82</td>
+										<td>12.88</td>
+										<td>34.16</td>
+										<td>10.58</td>
+										<td>0.69</td>
+									  </tr>
+									  <tr>
+										<th>Maceio</th>
+										<td>1.30</td>
+										<td>9.22</td>
+										<td>0.07</td>
+										<td>3.89</td>
+										<td>26.25</td>
+										<td>14.12</td>
+										<td>31.99</td>
+										<td>8.82</td>
+										<td>0.59</td>
+									  </tr>
+									  <tr>
+										<th>Natal</th>
+										<td>1.50</td>
+										<td>9.99</td>
+										<td>0.08</td>
+										<td>4.44</td>
+										<td>25.82</td>
+										<td>12.72</td>
+										<td>37.30</td>
+										<td>10.90</td>
+										<td>0.67</td>
+									  </tr>
+									  <tr>
+										<th rowspan="5" valign="top">Colombia</th>
+										<th>Ibague</th>
+										<td>0.53</td>
+										<td>43.94</td>
+										<td>0.78</td>
+										<td>3.16</td>
+										<td>30.50</td>
+										<td>12.09</td>
+										<td>38.10</td>
+										<td>7.49</td>
+										<td>0.57</td>
+									  </tr>
+									  <tr>
+										<th>Manizales</th>
+										<td>0.43</td>
+										<td>43.38</td>
+										<td>0.77</td>
+										<td>3.19</td>
+										<td>27.92</td>
+										<td>6.76</td>
+										<td>39.31</td>
+										<td>7.78</td>
+										<td>0.57</td>
+									  </tr>
+									  <tr>
+										<th>Neiva</th>
+										<td>0.32</td>
+										<td>54.98</td>
+										<td>0.68</td>
+										<td>3.04</td>
+										<td>48.50</td>
+										<td>10.36</td>
+										<td>39.39</td>
+										<td>7.67</td>
+										<td>0.55</td>
+									  </tr>
+									  <tr>
+										<th>Pereira</th>
+										<td>0.59</td>
+										<td>33.04</td>
+										<td>0.76</td>
+										<td>3.29</td>
+										<td>31.84</td>
+										<td>7.64</td>
+										<td>37.53</td>
+										<td>7.21</td>
+										<td>0.59</td>
+									  </tr>
+									  <tr>
+										<th>Villavicencio</th>
+										<td>0.53</td>
+										<td>26.82</td>
+										<td>0.42</td>
+										<td>3.61</td>
+										<td>35.29</td>
+										<td>8.24</td>
+										<td>40.84</td>
+										<td>8.78</td>
+										<td>0.65</td>
+									  </tr>
+									  <tr>
+										<th rowspan="5" valign="top">Mexico</th>
+										<th>Cuernavaca</th>
+										<td>0.34</td>
+										<td>112.39</td>
+										<td>0.42</td>
+										<td>3.40</td>
+										<td>70.81</td>
+										<td>4.15</td>
+										<td>30.08</td>
+										<td>10.15</td>
+										<td>0.75</td>
+									  </tr>
+									  <tr>
+										<th>Morelia</th>
+										<td>0.60</td>
+										<td>66.11</td>
+										<td>0.43</td>
+										<td>3.96</td>
+										<td>57.20</td>
+										<td>5.40</td>
+										<td>34.89</td>
+										<td>16.56</td>
+										<td>0.88</td>
+									  </tr>
+									  <tr>
+										<th>Tampico</th>
+										<td>0.30</td>
+										<td>110.25</td>
+										<td>0.39</td>
+										<td>4.21</td>
+										<td>55.46</td>
+										<td>2.61</td>
+										<td>35.39</td>
+										<td>13.10</td>
+										<td>0.93</td>
+									  </tr>
+									  <tr>
+										<th>Tepic</th>
+										<td>0.33</td>
+										<td>85.49</td>
+										<td>0.16</td>
+										<td>4.63</td>
+										<td>56.83</td>
+										<td>2.73</td>
+										<td>38.89</td>
+										<td>15.65</td>
+										<td>1.02</td>
+									  </tr>
+									  <tr>
+										<th>Toluca</th>
+										<td>2.12</td>
+										<td>74.40</td>
+										<td>0.44</td>
+										<td>4.08</td>
+										<td>60.81</td>
+										<td>4.22</td>
+										<td>34.92</td>
+										<td>13.99</td>
+										<td>0.90</td>
+									  </tr>
+									</tbody>
+								</table>
+								<p style="text-align: center"><img style="text-align: center" src="images/cerca_23.png" /></p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+					</footer>
+
+			</div>
+
+	</body>
+</html>
