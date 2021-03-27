@@ -1,0 +1,10 @@
+city = ('Mexico','Merida')
+ref = [
+    ('Mexico','La Laguna')
+    ('Mexico','Hermosillo')
+    ('Mexico','Colima-Alvarez')
+    ('Mexico','Culiacan')
+    ('Argentina','Gran Mendoza')
+    ('Colombia','Bucaramanga')
+    ('Brasil','Vitoria')
+]

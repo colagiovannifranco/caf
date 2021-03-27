@@ -1,0 +1,14 @@
+{
+    "city" : {"Country":"Mexico","City":"Merida"},
+
+    "ref" : {
+    "1":{"Country":"Mexico","City":"La Laguna"},
+    "2":{"Country":"Mexico","City":"Hermosillo"},
+    "3":{"Country":"Mexico","City":"Colima-Alvarez"},
+    "4":{"Country":"Mexico","City":"Culiacan"},
+    "5":{"Country":"Argentina","City":"Gran Mendoza"},
+    "6":{"Country":"Colombia","City":"Bucaramanga"},
+    "7":{"Country":"Brasil","City":"Vitoria"}   
+            }
+
+}
